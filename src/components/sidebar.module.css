@@ -1,0 +1,26 @@
+.sidebarWrapper{
+    position: fixed;
+    font-size: 1rem;
+    left: 30px;
+    top: 200px;
+}
+.sidebarWrapper ul{
+
+}
+.sidebarWrapper ul li{
+    margin-bottom: 20px;
+    cursor: Pointer;
+}
+
+.sideMenuOn{
+    text-decoration: none;
+    color: rgba(0,0,0,1);
+}
+.sideMenuOff{
+    text-decoration: none;
+    color: rgba(0,0,0,0.4);
+}
+.sideMenuOff:hover{
+    color: rgba(0,0,0,1);
+}
+
