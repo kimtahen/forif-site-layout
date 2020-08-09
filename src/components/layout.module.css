@@ -1,6 +1,17 @@
 .bodyWrapper{
+    box-sizing: border-box;
     margin-top: 100px;
     margin-left: 210px;
     min-height: 1000px;
-    border: 1px solid black;
+    height:100%;
+    background-color: slateblue;
+}
+
+.bodyWrapperNone{
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 100px;
+    min-height: 1000px;
+    background-color: slateblue;
+
 }

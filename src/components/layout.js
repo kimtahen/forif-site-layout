@@ -21,8 +21,8 @@ export default function Layout({ sideList, setSideCurrent,pathName, children }) 
   return (
     <div>
       <Header pathName={pathName} headerRef={headerRef}/>
-      <Sidebar sideList={sideList} setSideCurrent={setSideCurrent}/>
-      <div className={styles.bodyWrapper} ref={bodyRef}>
+      {sideList !== 0 && <Sidebar sideList={sideList} setSideCurrent={setSideCurrent}/>}
+      <div className={styles[`bodyWrapper${(sideList === 0) ? `None` : ``}`]} ref={bodyRef}>
         {children}
       </div>
       <Footer/>
